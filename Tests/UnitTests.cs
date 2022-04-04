@@ -35,7 +35,7 @@ namespace GithubActionsLab
 
         // tests for subtract
         [Test]
-        public void Subtract_Valid_Khondamirkhon_Umarov()
+        public void Subtract_Valid()
         {
             Assert.AreEqual(1, Program.Subtract("5", "4"));
             Assert.AreEqual(8, Program.Subtract("12", "4"));
@@ -43,7 +43,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid_Khondamirkhon_Umarov()
+        public void Subtract_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -51,7 +51,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null_Khondamirkhon_Umarov()
+        public void Subtract_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -60,7 +60,7 @@ namespace GithubActionsLab
 
         // tests for multiply
         [Test]
-        public void Multiply_Valid_Khondamirkhon_Umarov()
+        public void Multiply_Valid()
         {
             Assert.AreEqual(12, Program.Multiply("3", "4"));
             Assert.AreEqual(6, Program.Multiply("3", "2"));
@@ -68,7 +68,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid_Khondamirkhon_Umarov()
+        public void Multiply_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -76,7 +76,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null_Khondamirkhon_Umarov()
+        public void Multiply_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -85,7 +85,7 @@ namespace GithubActionsLab
 
         // tests for divide
         [Test]
-        public void Divide_Valid_Khondamirkhon_Umarov()
+        public void Divide_Valid()
         {
             Assert.AreEqual(4, Program.Divide("12", "3"));
             Assert.AreEqual(5, Program.Divide("25", "5"));
@@ -93,7 +93,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid_Khondamirkhon_Umarov()
+        public void Divide_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -101,7 +101,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null_Khondamirkhon_Umarov()
+        public void Divide_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -110,7 +110,7 @@ namespace GithubActionsLab
 
         // tests for power
         [Test]
-        public void Power_Valid_Khondamirkhon_Umarov()
+        public void Power_Valid()
         {
             Assert.AreEqual(64, Program.Power("4", "3"));
             Assert.AreEqual(15.625, Program.Power("2.5", "3"));
@@ -118,7 +118,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid_Khondamirkhon_Umarov()
+        public void Power_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -126,7 +126,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null_Khondamirkhon_Umarov()
+        public void Power_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
